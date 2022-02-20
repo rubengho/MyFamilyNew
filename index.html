@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+
+    <body>
+        <body bgcolor="cyan">
+        <script type="text/javascript"></script>
+            
+    <center>
+        <h1>My Family Book</h1>
+        <br>
+        <img id="Book" src="https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg">
+        <br>
+        <p id="name"></p>
+        <br>
+        <br>
+       <button type ="button" onclick="nextslide();"> Next</button>
+    
+    </center>
+
+    <script>
+          var images = ["https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+          
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+
+          "https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+          
+          "https://previews.123rf.com/images/yupiramos/yupiramos1803/yupiramos180310511/96946833-dibujos-animados-belleza-linda-chica-hija-ilustraci%C3%B3n-vectorial.jpg",
+
+          "https://i.ebayimg.com/images/g/ybEAAOSwmFNZZ3aE/s-l500.jpg",
+          
+        ];
+
+var i = 0; 
+var j = 0; 
+function nextslide(){ 
+  document.getElementById("Book").src = images[i]; 
+  i++;
+
+  var names = ["Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister","","Father","Mother","sister"]; 
+  
+  document.getElementById("name").innerHTML = names[j]; j++};
+  
+      </script>
+
+</body>
+    
+    </html>
